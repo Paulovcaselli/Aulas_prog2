@@ -20,10 +20,15 @@ public class Teste {
 		//System.out.println("\nmedia e: " + livro.calcMedia());
 		
 		
-		LivrosNotasArray livrosNotasArray = new LivrosNotasArray(10);
+		LivrosNotasArray livrosNotasArray = new LivrosNotasArray(5);
 		livrosNotasArray.adiconarNota(10);
 		livrosNotasArray.adiconarNota(7);
+		livrosNotasArray.adiconarNota(9);
+		livrosNotasArray.adiconarNota(8);
+		livrosNotasArray.adiconarNota(6);
 		System.out.print(livrosNotasArray.calcularMedia());
+		System.out.print("\n"+livrosNotasArray.getMaiorNota());
+		System.out.print("\n"+livrosNotasArray.getMenorNota());
 
 	}
 
